@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<link href="./mystyles.css" rel="stylesheet" />
+<body>
+    <form name="signup" method="post">
+        <div>
+            <div class="heading">Sign Up Form</div>
+            <hr>
+            <div class="flex">
+                <div class="flexItem">
+                    <label class='label' for="fname">First name</label><br>
+                    <input class='input' type="text" id="fname" name="fname"><br>
+                </div>
+                <div class="flexItem">
+                    <label class='label' for="lname">Last name</label><br>
+                    <input class='input' type="text" id="lname" name="lname"><br>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flexItem">
+                    <label class='label' for="email">Email</label><br>
+                    <input class='input' type="email" id="email" name="email"><br>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flexItem">
+                    <label class='label' for="phone">Phone</label><br>
+                    <input class='input' type="phone" id="phone" name="phone"><br>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flexItem">
+                    <label class='label' for="password">Password</label><br>
+                    <input class='input' type="password" id="password" name="password"><br>
+                </div>
+                <div class="flexItem">
+                    <label class='label' for="password">Confirm Password</label><br>
+                    <input class='input' type="password" id="confirm_password" name="confirm_password"><br>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flexItem">
+                    <button class='upload'
+                        onclick="event.preventDefault(); document.getElementById('file').click()">Profile
+                        Picture</button>
+                    <input type='file' id="file" name='file' onchange="displayFileName(this)" style="display:none">
+                </div> 
+
+                <div class="flexItem" id="fileDescription">
+                </div>
+            </div>
+        </div>
+
+        <input class="submit" type="submit" value="Submit" onclick=" event.preventDefault(); validateForm()">
+        </div>
+    </form>
+</body>
+<script src="index.js"></script>
+</html>

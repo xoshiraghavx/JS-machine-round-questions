@@ -1,0 +1,19 @@
+*{
+	box-sizing: border-box;
+}
+.container{
+	max-width: 700px;
+	position: relative;
+	margin: auto;
+}
+.left, .right{
+	cursor: pointer;
+	position: absolute;
+	background-color: rgba(240, 255, 255, 0.675);
+	padding: 16px;
+	border-radius: 3px;
+	top: 50%;
+}
+.right{
+	right: 0;
+}

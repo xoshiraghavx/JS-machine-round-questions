@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Auto complete using Pure Javascript
+	</title>
+</head>
+
+<body>
+	<!-- Onkeyup calls the function everytime 
+		a key is released -->
+	<input type="text" list="datalist"
+		onkeyup="ac(this.value)">
+
+	<!-- This data list will be edited 
+		through javascript -->
+	<datalist id="datalist">
+		<option value="Delhi"></option>
+		<option value="Ahemdabad"></option>
+		<option value="Punjab"></option>
+		<option value="Uttar Pradesh"></option>
+		<option value="Himachal Pradesh"></option>
+		<option value="Karnataka"></option>
+		<option value="Kerala"></option>
+		<option value="Maharashtra"></option>
+		<option value="Gujrat"></option>
+		<option value="Rajasthan"></option>
+		<option value="Bihar"></option>
+		<option value="Tamil Nadu"></option>
+		<option value="Haryana"></option>
+	</datalist>
+</body>
+<script src="index.js"></script>
+</html>
